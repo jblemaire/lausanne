@@ -52,8 +52,6 @@ a
 {
     font-family: MenuIcons !important;
     display: flex;
-
-
     font-size: 2em;
     min-width: 10%;
 }
@@ -154,7 +152,7 @@ nav div img
         background-color: #353535;
         align-items: center;
         justify-content: space-between;
-        padding: 0 1.5em;
+        padding: 0 0 0 1.5em;
     }
     nav h1
     {
@@ -166,7 +164,14 @@ nav div img
     {  padding: 0 1em;}
     .nav_buttons a
     {
-        margin:0 2%;
+
+    }
+    .nav_buttons
+    {
+        font-family: MenuIcons !important;
+        display: flex;
+        font-size: 2em;
+        width: 10%;
     }
     .buttons
     {
