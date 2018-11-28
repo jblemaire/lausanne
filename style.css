@@ -1,0 +1,260 @@
+@font-face
+{
+    font-family: "SocialIcons";
+    src: url("img/icomoon.woff") format("woff"),
+    url("img/icomoon.ttf") format("truetype");
+}
+@font-face
+{
+    font-family: "MenuIcons";
+    src: url("img/menu.woff") format("woff"),
+    url("img/menu.ttf") format("truetype");
+}
+*
+{
+    margin:0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+body,html
+{
+
+    height:100%;
+}
+.bckgrnd_img
+{
+
+    background-image: url(img/lauzanne_img.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    min-height: 72%;
+}
+nav
+{
+    height: 14em;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #353535;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    font-family: 'RobotoDraft', 'Helvetica Neue', Helvetica, Arial;
+}
+a
+{
+    cursor: pointer;
+}
+
+.nav_buttons
+{
+    font-family: MenuIcons !important;
+    display: flex;
+
+
+    font-size: 2em;
+    min-width: 10%;
+}
+
+.dots::after
+{content:'D';}
+.meteo::after
+{display:none;}
+.search::after
+{content:'S';}
+.temp::after
+{display:none;}
+nav h1
+{
+    font-size: 3.5em;
+}
+nav img
+{height:3.5em;}
+nav div img
+{  padding: 0 1em;}
+
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 4em;
+    align-items: center;
+    color: white;
+    margin: 0 1.3em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    font-family: 'RobotoDraft', 'Helvetica Neue', Helvetica, Arial;
+
+}
+
+.buttons a
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    line-height: 2em;
+
+}
+.buttons div a:hover
+{
+    background-color: rgba(255, 86, 81,0.5);
+
+}
+.buttons div
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    height: 2em;
+    width: 100%;
+    margin: 2px 0;
+
+}
+.social_block
+{display:none;}
+
+@media all and (min-width: 992px)
+{
+
+
+    #Logo
+    {height: 3.7em;}
+    .temp::after
+    {
+        content:'| 4°C';
+        display:unset;
+    }
+    .meteo::after
+    {
+        content:'M';
+        display:unset;
+    }
+    .bckgrnd_img
+    {
+
+        background-image: url(img/lauzanne_img.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100%;
+    }
+
+
+    nav
+    {
+        max-height: 7em;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        background-color: #353535;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5em;
+    }
+    nav h1
+    {
+        font-size: 1.5em;
+    }
+    nav img
+    {height:2em;}
+    nav div img
+    {  padding: 0 1em;}
+    .nav_buttons a
+    {
+        margin:0 2%;
+    }
+    .buttons
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.7em;
+        align-items: center;
+        color: white;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+
+    }
+
+    .buttons div
+    {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.64);
+        height: 5em;
+        margin: 2px 0;
+    }
+    .buttons a
+    {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: block;
+        line-height: 5em;
+
+    }
+
+     .social_block
+     {
+        display: flex;
+         flex-direction: column;
+         margin-top:20vh;
+     }
+     .social_div
+     {
+         width:fit-content;
+         width: -moz-fit-content;
+         font-size: 2em;
+         color:white;
+
+         background-color: #00a7ff;
+     }
+     .social_div a
+     {
+         padding:10px;
+     }
+     .social_div a:hover
+     {
+         background-color: #223545;
+     }
+
+     .social_txt
+     {
+         width: 8em;
+        display: none;
+     }
+     .social_div
+     {
+         display:flex;
+         flex-direction: row;
+
+     }
+     .social_div a:hover .social_txt
+     {
+        display:unset;
+     }
+     .social_icon
+     {
+         font-family: SocialIcons;
+         font-size: 1em;
+
+     }
+     .facebook::after
+     {content:'f';}
+     .twitter::after
+     {content:'t';}
+     .instagram::after
+     {content:'i';}
+     .pinterest::after
+     {content:'p';}
+     .youtube::after
+     {content:'y';}
+     .linkedin::after
+     {content:'l';}
+}
